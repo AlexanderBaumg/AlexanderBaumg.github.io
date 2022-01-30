@@ -1,35 +1,98 @@
-green {
-  color: green;
+body {
+  background-color: rgb(20, 20, 20);
+  height: 95%;
+  padding-bottom: 15px;
+  padding-top: 3px;
 }
 
-lime {
-  color: lime;
+button {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 4px 4px 0px gray;
+  display: flex;
+  font-weight: bolder;
+  justify-content: center;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  outline: none;
+  padding: 10px;
+  width: 200px;
 }
 
-lettuce {
-  color: lightgreen;
+button:active {
+  box-shadow: 2px 2px 0px darkgray;
+  margin-left: 2px;
+  margin-top: 2px;
 }
 
-ocean {
-  color: darkblue;
+br {
+  border: 3px solid white;
+  height: 3px;
 }
 
-sea {
-  color: dodgerblue;
+h1 {
+  display: flex;
+  margin-top: 0;
 }
 
-sky {
-  color: deepskyblue;
+header {
+  margin-left: 10px;
 }
 
-maroon {
-  color: maroon;
+html {
+  background-color: black;
+  height: 100%;
 }
 
-soviet {
-  color: red;
+input {
+  margin-bottom: 10px;
+  width: 195px;
 }
 
-tomato {
-  color: tomato;
+main {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+p {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+  display: flex;
+  margin: 0;
+  padding: 5px;
+}
+
+.nonwisdom {
+  background-color: firebrick;
+}
+
+.nonwisdom:active {
+  background-color: crimson;
+}
+
+.nonwisdom:hover {
+  background-color: darkred;
+}
+
+.phrase {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  color: white;
+  padding: 5px;
+}
+
+.submit {
+  background-color: lightgray;
+}
+
+.wisdom {
+  background-color: cornflowerblue;
+}
+
+.wisdom:active {
+  background-color: midnightblue;
+}
+
+.wisdom:hover {
+  background-color: DarkSlateBlue;
 }
