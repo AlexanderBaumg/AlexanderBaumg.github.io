@@ -5,16 +5,44 @@
     <title>Hello</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js" charset="utf-8"></script>
   </head>
   <body>
+
     <header>
-      <h2>
+      <h1>
         <green>We</green>
-        <lime>lcome</lime>
-      </h2>
+        <lime>lco</lime>
+        <lettuce>me</lettuce>
+      </h1>
     </header>
+
     <main>
-      <button id="wisdom">Wisdom button</button>
+
+      <button id="wisdom" class="wisdom" onclick="wisdom()">
+        <p class="wrapper">
+          <ocean>Wisd</ocean>
+          <sea>om bu</sea>
+          <sky>tton</sky>
+        </p>
+      </button>
+      <h3 class="phrase" id="wisdomphrase"></h3>
+
+      <button id="nonwisdom" class="nonwisdom" onclick="nonwisdom()">
+        <p>
+          <maroon>Non-W</maroon>
+          <soviet>isdom b</soviet>
+          <tomato>utton</tomato>
+        </p>
+      </button>
+      <h3 class="phrase" id="nonwisdomphrase"></h3><br>
+
+      <input placeholder="Enter Password" id="submission">
+      <button onclick="submitpassword()" class="submit">Submit</button>
+      <h3 class="phrase" id="response"></h3>
+
     </main>
+
   </body>
 </html>
