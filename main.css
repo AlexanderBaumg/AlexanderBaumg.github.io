@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+
+a {
+  color: gray;
+  text-decoration: none;
+}
+
 body {
   background-color: rgb(20, 20, 20);
   height: 95%;
@@ -24,8 +32,20 @@ button {
 
 button:active {
   box-shadow: 2px 2px 0px darkgray;
+  height: 58px;
   margin-left: 2px;
   margin-top: 2px;
+  width: calc(90% - 2px);
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 3px solid gray;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 50px;
+  padding: 10px;
+  width: 95%;
 }
 
 h1 {
@@ -55,11 +75,30 @@ main {
   margin-top: 10px;
 }
 
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav h5 {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  margin: 0;
+  padding: 5px;
+}
+
 p {
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 3px;
   margin: 0;
   padding: 5px;
+}
+
+span {
+  font-size: 8px;
 }
 
 .nonwisdom {
@@ -79,6 +118,8 @@ p {
   border-radius: 3px;
   color: white;
   display: inline-block;
+  min-height: 20px;
+  min-width: 140px;
   padding: 5px;
 }
 
@@ -101,4 +142,18 @@ p {
 .wrapper {
   display: flex;
   justify-content: center;
+}
+
+#nonwisdomphrase {
+  background-color: rgba(255, 200, 200, 0.3);
+}
+
+#secretlink {
+  color: black;
+  font-family: 'Comforter', cursive;
+  font-weight: bolder;
+}
+
+#wisdomphrase {
+  background-color: rgba(200, 200, 255, 0.3);
 }
