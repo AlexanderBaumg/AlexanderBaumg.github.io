@@ -50,16 +50,18 @@ function nonwisdom() {
 //Password stuff
 var n = 0;
 var denials = [
-  "Nope.", "Incorrect.", "Wrong.", "Sorry.", "No shot."
+  "Nope.", "Incorrect.", "Wrong.", "Sorry.", "No shot.", "False."
 ];
+
+var people = ['adam', 'agnes', 'amelie', 'anna', 'arvid', 'atle', 'augusta', 'benjamin', 'bruno', 'carl-ludwig', 'charlotte', 'dexter', 'emelie', 'filip', 'folke', 'georg', 'god', 'hampus', 'hector', 'henrik', 'ingrid', 'iris', 'irma', 'isabelle', 'jack', 'jakob', 'johannes', 'john', 'jonas', 'jonathan', 'julius', 'laura', 'leonie', 'liam', 'lilly', 'linnea', 'lluc', 'lucas', 'luna', 'mara', 'mathias', 'mathilde', 'maud', 'maxi', 'maximilian', 'nicholas', 'nico', 'nils', 'rebecka', 'sarah', 'signe', 'sophia', 'stella', 'theo', 'theodor', 'tintin', 'viktor'];
 
 function submitpassword() {
   var response = $("#response");
   var submission = document.getElementById("submission");
-  var submit = submission.value;
+  var submit = submission.value.toUpperCase();
 
 
-  if (submit == "Chungus") {
+  if (submit == "CHUNGUS") {
     response.text("You fool. Never trust the wisdom button.");
     submission.value = "";
     return;
@@ -71,14 +73,26 @@ function submitpassword() {
     return;
   }
 
-  if (submit == "") {
+  if ((submit == "") || (submit == " ")) {
     response.text("Come on, the password is obviously not nothing.");
     submission.value = "";
     return;
   }
 
-  if (submit == "bananabread") {
+  if (submit == "BANANABREAD") {
     response.text("Why would you say that?");
+    submission.value = "";
+    return;
+  }
+
+  if ((submit == "ALEX") || (submit == "ALEXANDER") || (submit == "VINCENT") || (submit == "BAUMGARTNER")) {
+    response.text("Hot but wrong.");
+    submission.value = "";
+    return;
+  }
+
+  if (people.includes(submit.toLowerCase())) {
+    response.text("Hey what's up");
     submission.value = "";
     return;
   }
