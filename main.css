@@ -10,14 +10,16 @@ button {
   border: none;
   border-radius: 5px;
   box-shadow: 4px 4px 0px gray;
-  display: flex;
+  display: inline-block;
+  font-size: 30px;
   font-weight: bolder;
+  height: 60px;
   justify-content: center;
   letter-spacing: 2px;
   margin-bottom: 15px;
   outline: none;
   padding: 10px;
-  width: 100%;
+  width: 90%;
 }
 
 button:active {
@@ -26,13 +28,9 @@ button:active {
   margin-top: 2px;
 }
 
-br {
-  border: 3px solid white;
-  height: 3px;
-}
-
 h1 {
   display: flex;
+  font-size: 60px;
   justify-content: center;
   margin-top: 0;
 }
@@ -60,7 +58,6 @@ main {
 p {
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 3px;
-  display: flex;
   margin: 0;
   padding: 5px;
 }
@@ -81,6 +78,7 @@ p {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 3px;
   color: white;
+  display: inline-block;
   padding: 5px;
 }
 
@@ -98,4 +96,9 @@ p {
 
 .wisdom:hover {
   background-color: DarkSlateBlue;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
 }
